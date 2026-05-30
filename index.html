@@ -1,27 +1,40 @@
-<h1>Guess the Number!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Guess the Number!</h1>
 
-<!-- Login/Register -->
-<div id="loginSection">
-  <p>Enter your name and password:</p>
-  <input type="text" id="playerName" placeholder="Name">
-  <br>
-  <input type="password" id="playerPass" placeholder="Password">
-  <br>
-  <button id="loginBtn">Login / Register</button>
-</div>
-
-<!-- Game Section -->
-<div id="gameSection" style="display:none;">
-  <div class="profile" id="profileInfo"></div>
-  <p>Enter a number between 1 and 10:</p>
-  <input type="number" id="guess" min="1" max="10">
-  <button id="guessBtn">Guess</button>
-  <button id="toggleBtn">Toggle Dark Mode</button>
-  <button id="logoutBtn">Log Out</button>
-  <div id="result"></div>
-
-  <div class="leaderboard">
-    <h2>Leaderboard</h2>
-    <ol id="leaderboardList"></ol>
+  <!-- Login/Register -->
+  <div id="loginSection">
+    <p>Enter your name and password:</p>
+    <input type="text" id="playerName" placeholder="Name">
+    <br>
+    <input type="password" id="playerPass" placeholder="Password">
+    <br>
+    <button id="loginBtn">Login / Register</button>
   </div>
-</div>
+
+  <!-- Game Section -->
+  <div id="gameSection" style="display:none;">
+    <div class="profile" id="profileInfo"></div>
+    <p>Enter a number between 1 and 10:</p>
+    <input type="number" id="guess" min="1" max="10">
+    <button id="guessBtn">Guess</button>
+    <button id="toggleBtn">Toggle Dark Mode</button>
+    <button id="logoutBtn">Log Out</button>
+    <div id="result"></div>
+
+    <div class="leaderboard">
+      <h2>Leaderboard</h2>
+      <ol id="leaderboardList"></ol>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
